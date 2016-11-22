@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML5的学习第一天</title>
+	<link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/moon.css">
+</head>
+<body>
+	<div class="reveal">
+        <div class="slides">
+            <section>
+            	<h2>一、认识HTML5</h2>
+                <h2>二、语义化</h2>
+                <h2>三、兼容处理、微数据、ARIA</h2>
+                <h2>四、HTML5表单</h2>
+                <h2>五、多媒体</h2>
+                <h2>六、DOM扩展</h2>
+            </section>
+            <section>
+                <h2>一、认识HTML5</h2>
+                <p class="fragment">通俗的讲，HTML5就是一个对于HTML的版本号而已，没有什么神奇的。但是，他又不仅仅只是一个版本号，他更重要的作用是指定了一系列的Web开发的标准，成为第一个将Web做为应用开发平台的HTML语言。</p>
+                <p class="fragment">1. 语义化更强--新的特殊内容元素，比如 article、footer、header、nav、section。</p>
+                <p class="fragment">2. 新的表单控件，比如 calendar、date、time、email、url、search。</p>
+                <p class="fragment">3. 用于媒介回放的 video 和 audio 元素。</p>
+                <p class="fragment">4. 对本地离线存储的更好的支持。</p>
+                <p class="fragment">5. 用于绘画的 canvas 元素。</p>
+            </section>
+            <section>
+	            <h2>二、语义化</h2>
+                <p class="fragment">通过HTML5中的新增标签来增强语义性</p>
+                <p class="fragment"><img src="image/语义化.png" alt=""></p>
+        	</section>
+        	<section>
+	            <h2>三、兼容处理、微数据、ARIA</h2>
+                <p class="fragment">因为HTML5的新标签IE8及以下的浏览器不兼容，所以我们要解决兼容性问题</p>
+                <p class="fragment"><img src="image/兼容.png" alt=""></p>
+                <p class="fragment">微数据</p>
+                <p class="fragment">微数据是在如 span、div 的标签内添加属性，让机器（如搜索引擎）识别其含义，某些特定类型的信息。</p>
+                <p class="fragment">ARIA</p>
+                <p class="fragment">WAI-ARIA是指无障碍的网页应用。主要是应用于网页的辅助阅读设备，比如屏幕阅读器。</p>
+        	</section>
+            <section>
+                <h2>四、HTML5表单</h2>
+                <p class="fragment">输入类型</p>
+                <p class="fragment">表单元素</p>
+                <p class="fragment">表单属性</p>
+            </section>
+            <section>
+                <h2>五、多媒体</h2>
+                <p class="fragment">音频</p>
+                <p class="fragment">视频</p>
+            </section>
+            <section>
+                <h2>六、DOM扩展</h2>
+                <p class="fragment">获取元素</p>
+                <p class="fragment">类名操作</p>
+                <p class="fragment">自定义属性</p>
+            </section>
+            <section>
+                <h2 style="font-size: 4.5em;text-align: center;">谢谢大家</h2>
+            </section>
+        </div>
+    </div>
+<script src="js/reveal.js"></script>
+<script>
+    Reveal.initialize({
+	// 是否在右下角展示控制条
+	controls: false,
+	// 是否显示演示的进度条
+    progress: true,
+
+    // 是否显示当前幻灯片的页数
+    slideNumber: 'c/t',
+
+    // 是否将每个幻灯片改变加入到浏览器的历史记录中去
+    history: false,
+
+    // 是否启用键盘快捷键来导航
+    keyboard: true,
+
+    // 是否启用幻灯片的概览模式,开启后，可以使用ESC键查看幻灯片概览
+    overview: true,
+
+    // 是否将幻灯片垂直居中
+    center: true,
+
+    // 是否在触屏设备上启用触摸导航
+    touch: true,
+
+    // 是否循环演示
+    loop: true,
+
+    // 是否将演示的方向变成 RTL(反向)
+    rtl: false,
+
+    // 全局开启和关闭碎片
+    fragments: true,
+
+    // 标识演示文稿是否在嵌入模式中运行，即包含在屏幕的有限部分中的
+    embedded: false,
+
+    // 标识当问号键被点击的时候是否应该显示一个帮助的覆盖层
+    help: true,
+
+    //  两个幻灯片之间自动切换的时间间隔（毫秒），当设置成 0 的时候则禁止自动切换，该值可以被幻灯片上的 ` data-autoslide` 属性覆盖
+    autoSlide: 0,
+
+    // 当遇到用户输入的时候停止切换
+    autoSlideStoppable: true,
+
+    // 是否启用通过鼠标滚轮来导航幻灯片
+    mouseWheel: true,
+
+    //  是否在移动设备上隐藏地址栏
+    hideAddressBar: true,
+
+    // 是否在一个弹出的 iframe 中打开幻灯片中的链接
+    previewLinks: false,
+
+    // 切换过渡效果
+    transition: 'default', // none/fade/slide/convex/concave/zoom
+
+    // 过渡速度
+    transitionSpeed: 'default', // default/fast/slow
+
+    // 全屏幻灯片背景的过渡效果
+    backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+    // 除当前可见的之外的幻灯片数量
+    viewDistance: 3,
+
+    // 视差背景图片
+    parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+    // 视差背景尺寸
+    parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+
+    // 移动视差背景（水平和垂直）滑动变化的数量, 例如100
+    parallaxBackgroundHorizontal: '',
+    parallaxBackgroundVertical: ''
+});
+</script>
+</body>
+</html>
